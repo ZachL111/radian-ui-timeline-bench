@@ -1,0 +1,17 @@
+{
+  "repo": "radian-ui-timeline-bench",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 2,
+    "ship": 150,
+    "watch": 112
+  },
+  "terms": [
+    "view drift",
+    "state pressure",
+    "layout risk",
+    "interaction cost"
+  ]
+}
