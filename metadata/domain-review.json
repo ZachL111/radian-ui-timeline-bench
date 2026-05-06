@@ -1,0 +1,73 @@
+{
+  "repo": "radian-ui-timeline-bench",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for timeline scenarios with append-only fixtures, checkpoint recovery checks, and explicit failure cases.",
+  "review_model": {
+    "terms": [
+      "view drift",
+      "state pressure",
+      "layout risk",
+      "interaction cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "view drift",
+      "signal": 72,
+      "slack": 42,
+      "drag": 18,
+      "confidence": 45,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state pressure",
+      "signal": 47,
+      "slack": 45,
+      "drag": 9,
+      "confidence": 45,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "layout risk",
+      "signal": 56,
+      "slack": 32,
+      "drag": 8,
+      "confidence": 70,
+      "score": 190,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "interaction cost",
+      "signal": 55,
+      "slack": 51,
+      "drag": 24,
+      "confidence": 76,
+      "score": 165,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "view drift",
+      "signal": 63,
+      "slack": 54,
+      "drag": 17,
+      "confidence": 77,
+      "score": 206,
+      "lane": "ship"
+    }
+  ]
+}
